@@ -1,0 +1,18 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "synapsegzac4dn"
+		},
+		"synapsegzac4dn-WorkspaceDefaultSqlServer_connectionString": {
+			"value": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=tcp:synapsegzac4dn.sql.azuresynapse.net,1433;Initial Catalog=@{linkedService().DBName}"
+		},
+		"synapsegzac4dn-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://datalakegzac4dn.dfs.core.windows.net"
+		},
+		"Trigger 1_properties_typeProperties_scope": {
+			"value": "/subscriptions/82bec9aa-76a9-41c0-a07f-9ed5d9f05127/resourceGroups/dp203-gzac4dn/providers/Microsoft.Storage/storageAccounts/datalakegzac4dn"
+		}
+	}
+}
