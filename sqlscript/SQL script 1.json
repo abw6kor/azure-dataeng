@@ -2,7 +2,7 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "-- This is auto-generated code\nSELECT\n     *\nFROM\n    OPENROWSET(\n        BULK 'https://datalakegzac4dn.dfs.core.windows.net/output/Raw/EventHub/Year=*/Month=*/Day=*/*.snappy.parquet',\n        FORMAT = 'PARQUET'\n    ) AS [result]\n",
+			"query": "-- This is auto-generated code\nSELECT\n     *\nFROM\n    OPENROWSET(\n        BULK 'https://datalakegzac4dn.dfs.core.windows.net/output/Raw/EventHub/Year=*/Month=*/Day=*/*.snappy.parquet',\n        FORMAT = 'PARQUET'\n    ) AS [result1]\n",
 			"metadata": {
 				"language": "sql"
 			},
