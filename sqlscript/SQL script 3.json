@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [CustomerID]\n,[PersonID]\n,[StoreID]\n,[TerritoryID]\n,[AccountNumber]\n,[rowguid]\n,[ModifiedDate]\n FROM [dbo].[V_Customer_Data] \n",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "dataeng",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

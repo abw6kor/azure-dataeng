@@ -1,0 +1,25 @@
+{
+	"name": "Trigger 1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Pipeline 1",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/eventhub/blobs/dataeng/dataeng",
+			"blobPathEndsWith": ".avro",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/82bec9aa-76a9-41c0-a07f-9ed5d9f05127/resourceGroups/dp203-gzac4dn/providers/Microsoft.Storage/storageAccounts/datalakegzac4dn",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
